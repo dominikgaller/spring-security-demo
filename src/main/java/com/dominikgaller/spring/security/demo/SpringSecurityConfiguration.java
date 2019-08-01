@@ -26,7 +26,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 realmName("spring-app").
                 and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).
                 and().csrf().disable().
-                authorizeRequests().antMatchers("/greetings/**").permitAll().anyRequest().denyAll();
+                authorizeRequests().antMatchers("/greetings/**").permitAll().anyRequest().authenticated();
 
     }
 

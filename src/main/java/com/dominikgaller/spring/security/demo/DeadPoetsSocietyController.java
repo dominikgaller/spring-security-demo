@@ -14,4 +14,9 @@ public class DeadPoetsSocietyController {
         return "Captain, my captain!";
     }
 
+    @RequestMapping("/seizeTheDay")
+    public String seizeTheDay() {
+        return "Seize the day Boys.";
+    }
+
 }
